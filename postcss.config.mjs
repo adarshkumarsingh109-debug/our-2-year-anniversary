@@ -1,6 +1,11 @@
+// postcss.config.mjs  (recommended .mjs for ESM)
 const config = {
   plugins: {
-    "@tailwindcss/postcss": {},
+    "@tailwindcss/postcss": {
+      optimize: {
+        minify: false,   // ← This often fixes Vercel builds
+      },
+    },
   },
 };
 
