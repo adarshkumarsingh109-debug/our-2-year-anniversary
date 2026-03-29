@@ -1,9 +1,9 @@
-// postcss.config.mjs  (recommended .mjs for ESM)
+/** @type {import('postcss-load-config').Config} */
 const config = {
   plugins: {
     "@tailwindcss/postcss": {
       optimize: {
-        minify: false,   // ← This often fixes Vercel builds
+        minify: false,     // This disables problematic minification on Vercel
       },
     },
   },
