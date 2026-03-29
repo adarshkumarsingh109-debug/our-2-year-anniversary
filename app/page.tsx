@@ -163,7 +163,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, Gift, Frown } from "lucide-react";
-import confetti from "canvas-confetti";
+import * as confetti from "canvas-confetti";
 
 export default function AnniversarySite() {
   const yourName = "Adarsh";
